@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.cabecera {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    background: #A1FFCE;
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+
+}
+
+.cabecera__section{
+
+}
+.cabecera__nav a{
+    color: rgb(2, 47, 12);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+
+header .texto-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-header h1{
+    font-size: 50px;
+    color: black;
+}
+
+.texto-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+
+/*Quienes somos*/
+
+.quienes-somos h2{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.quienes-somos .contenedor{
+    width: 50%;
+}
+
+.contenedor h3{
+    margin-bottom: 15px;
+}
+
+.contenedor p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    }
+
+
+    /*Productos*/
+
+.galeria-productos{
+    background: rgba(151, 149, 149, 0.74);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ /*Sucursales*/
+
+.imagen-sucursales{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ /*Contacto*/
+
+.contacto{
+    background-color: rgb(68, 154, 154);
+    padding-bottom: 30px;
+}
+
+ /*footer*/
+
+ footer{
+     background-color: #A1FFCE;
+     padding: 60px 0 30px 0;
+     margin: auto;
+     overflow: hidden;
+ }
+
+ footer h4{
+     display: flex;
+     width: 90%;
+     justify-content: space-evenly;
+     margin: auto;
+     padding-bottom: 50px;
+     border-bottom: 1px;
+ }
+
+
+ @media screen and (max-width: 600px){
+     header {
+background-position: center;
+        
+     }
+     header .texto-header {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+ }
+
+ @media screen and (max-width: 500px){
+     nav{
+         text-align: center;
+         padding: 30px 0 0 0;
+     }
+
+     nav a{
+         margin-right: 5px;
+     }
+ .texto-header {
+
+    font-size: 35px;
+ }
+ }
+
+
+ /*Productos grid
+ 
+
+ .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "galeria galeria galeria galeria"
+    "footer footer footer footer"
+
+    ;
+}
+
+.header {
+grid-area: header;
+}
+
+.galeria-grid {
+    grid-area: galeria;
+    background-color: brown;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+
+.productos {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+}
+
+.productos div {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+.productos header {
+    background-color: aqua;
+    color: #FAFFD1; 
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+}
+*/
+
+.tittle h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footer,
+.container > .div {
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.container .header,
+.container .footer {
+    grid-column: 1/6;
+    background: rgba(0, 0, 0, 0.288);
+    color: #ffffff;
+}
+
+.container > .content {
+    grid-column: span 3;
+}
+
+.container > .article {
+    background: green;
+    padding: 20px;
+    margin-top: 5px;
+    color: white;
+}
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+}
+
+.container > .sidebar {
+    grid-column: span 2;
+    background: #faffd1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Animaciones*/
+
+.cabecera__nav a:hover{
+    color: green;
+    font-size: 1.3rem;
+}
+
+#quienesSomos:hover{
+    transform: scale(1.5);
+}
+
