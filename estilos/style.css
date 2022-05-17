@@ -292,3 +292,6 @@ grid-area: header;
     transform: scale(1.5);
 }
 
+#productoImagen:hover{
+    transform: scale(1.5);
+}
