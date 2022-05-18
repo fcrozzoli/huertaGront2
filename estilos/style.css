@@ -1,4 +1,4 @@
-* {
+/* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -34,6 +34,8 @@ body{
     background: #A1FFCE;
     background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
     background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+
+    
 
 }
 
@@ -71,7 +73,6 @@ header .texto-header{
 }
 
 
-/*Quienes somos*/
 
 .quienes-somos h2{
     display: flex;
@@ -94,7 +95,6 @@ header .texto-header{
     }
 
 
-    /*Productos*/
 
 .galeria-productos{
     background: rgba(151, 149, 149, 0.74);
@@ -102,7 +102,6 @@ header .texto-header{
     justify-content: space-evenly;
 }
 
- /*Sucursales*/
 
 .imagen-sucursales{
     display: flex;
@@ -110,14 +109,12 @@ header .texto-header{
 
 }
 
- /*Contacto*/
 
 .contacto{
     background-color: rgb(68, 154, 154);
     padding-bottom: 30px;
 }
 
- /*footer*/
 
  footer{
      background-color: #A1FFCE;
@@ -164,63 +161,6 @@ background-position: center;
  }
  }
 
-
- /*Productos grid
- 
-
- .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header header"
-    "galeria galeria galeria galeria"
-    "footer footer footer footer"
-
-    ;
-}
-
-.header {
-grid-area: header;
-}
-
-.galeria-grid {
-    grid-area: galeria;
-    background-color: brown;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: black;
-}
-
-
-.productos {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-
-}
-
-.productos div {
-    background: white;
-    padding: 20px;
-    border-radius: 4px;
-
-}
-
-.productos header {
-    background-color: aqua;
-    color: #FAFFD1; 
-    grid-column-start: 1;
-    grid-column-end: -1;
-
-}
-*/
 
 .tittle h1 {
     padding: 20px 0;
@@ -281,7 +221,6 @@ grid-area: header;
     flex-direction: column;
 }
 
-/*Animaciones*/
 
 .cabecera__nav a:hover{
     color: green;
@@ -294,4 +233,10 @@ grid-area: header;
 
 #productoImagen:hover{
     transform: scale(1.5);
+}
+
+*/
+
+.green{
+    background-color: green;
 }
