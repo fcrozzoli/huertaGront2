@@ -1,0 +1,52 @@
+$bg-color: #00fd7a;
+
+
+/*mapa*/
+
+$redes:(
+    twitter: #55e,
+    facebook: violet,
+    instagram: red,
+);
+
+@each $social, $color in $redes {
+    .btn--#{$social}{
+        background-color: $color;
+    }
+};
+
+
+/*extend*/
+
+.semillasEx{
+    border: 1px solid red;
+    background-color: gold;
+}
+
+.semilla--puerro{
+    @extend .semillasEx;
+    border-radius: 10px;
+}
+
+.semilla--acelga{
+    @extend .semillasEx;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.semilla--apio{
+    @extend .semillasEx;
+    border: 3px yellow;
+}
+
+
+/*mixin*/
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.ejemplomix {
+    @include sizes(500px, 50px);
+    background-color: green;
+}
