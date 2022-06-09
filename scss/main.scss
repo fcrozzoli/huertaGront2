@@ -14,9 +14,27 @@ $bg-color: #00fd7a;
 body {
 
     height: 100vh;
+    background-color: whitesmoke;
 }
 
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
 
+.div1{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.div2{
+    padding: 50px; 
+        p{
+            font-size: 1.6rem;
+        }
+}
 
 .contenedor {
     padding: 60px 0;
@@ -26,7 +44,13 @@ body {
     overflow: hidden;
 }
 
-
+.h1 {
+    text-align: center;
+    color: #0a6605;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
 
 .titulo {
     color: $bg-color;
@@ -156,8 +180,6 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
-
 
 
 

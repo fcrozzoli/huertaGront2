@@ -1,11 +1,79 @@
 /* Variables*/
+/* import*/
+footer {
+  background-color: #00fd7a;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden; }
+  footer .footernav {
+    display: flex;
+    flex-flow: column wrap;
+    text-decoration: none; }
+    footer .footernav a {
+      font-size: 1rem; }
+      footer .footernav a:hover {
+        color: white; }
+  footer h4 {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px; }
+
+/*mapa*/
+.btn--twitter {
+  background-color: #55e; }
+
+.btn--facebook {
+  background-color: violet; }
+
+.btn--instagram {
+  background-color: red; }
+
+/*extend*/
+.semillasEx, .semilla--puerro, .semilla--acelga, .semilla--apio {
+  border: 1px solid red;
+  background-color: gold; }
+
+.semilla--puerro {
+  border-radius: 10px; }
+
+.semilla--acelga {
+  font-family: 'Courier New', Courier, monospace; }
+
+.semilla--apio {
+  border: 3px yellow; }
+
+/*mixin*/
+.ejemplomix {
+  height: 50px;
+  width: 500px;
+  background-color: green; }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
 body {
-  height: 100vh; }
+  height: 100vh;
+  background-color: whitesmoke; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  padding: 50px; }
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black; }
+
+.div2 {
+  padding: 50px; }
+  .div2 p {
+    font-size: 1.6rem; }
 
 .contenedor {
   padding: 60px 0;
@@ -13,6 +81,13 @@ body {
   max-width: 1000px;
   margin: auto;
   overflow: hidden; }
+
+.h1 {
+  text-align: center;
+  color: #0a6605;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  margin-top: 15px; }
 
 .titulo {
   color: #00fd7a;
@@ -57,27 +132,6 @@ body {
 
 #quienesSomos:hover {
   transform: scale(1.5); }
-
-footer {
-  background-color: #00fd7a;
-  padding: 60px 0 30px 0;
-  margin: auto;
-  overflow: hidden; }
-  footer .footernav {
-    display: flex;
-    flex-flow: column wrap;
-    text-decoration: none; }
-    footer .footernav a {
-      font-size: 1rem; }
-      footer .footernav a:hover {
-        color: white; }
-  footer h4 {
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px; }
 
 .tittle h1 {
   padding: 20px 0;
